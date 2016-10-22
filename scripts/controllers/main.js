@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('chattyApp')
-  .controller('MainCtrl', function ( $scope, messageService ) {
+  .controller('MainCtrl', function ( $scope, $filter, messageService ) {
     messageService.getMessages().then(function ( response ) {
       $scope.messages = response.data;
     });
@@ -19,4 +19,7 @@ angular.module('chattyApp')
       'AngularJS',
       'Karma'
     ];
+
+
+
   });

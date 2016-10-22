@@ -77,3 +77,9 @@ body {
     border-bottom: 0;
   }
 }
+
+.messageContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

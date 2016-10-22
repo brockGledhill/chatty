@@ -9,6 +9,15 @@
 		<input ng-model="newMessage" type="text" placeholder="Hello!">
 	</form>
 
-	<div ng-repeat="message in messages track by $index">{{ message }}</div>
+  <!-- onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hello!'" -->
+
+  <!--ng-blur ng-focus  -->
+
+  <div class="messageContainer" ng-repeat="message in messages track by $index">
+    <div>{{message.message}}</div>
+    <div> {{message.time | date: 'h:m a'}} </div>
+  </div>
+
+  <button ng-click=""></button>
 
 </div>
